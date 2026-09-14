@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+    <style>
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+     column-gap: 20px;
+     row-gap: 20px;
+}
+
+ .card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+        }
+.card img {
+    width: 300px;
+    height: 200px;
+        object-fit: cover;
+           display: block;
+
+}
+
+.status {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+    
+
+<div class="gallery">
+     <div class="card">
+        <img src="/img/chinees.png" alt="Gallery image">
+        <span class="status">Available</span>
+    </div>
+
+<div class="card">
+        <img src="/img/colors.png" alt="Gallery image">
+        <span class="status">Sold</span>
+    </div>
+
+<div class="card">
+        <img src="/img/eviltour.png" alt="Gallery image">
+        <span class="status">Sold</span>
+    </div>
+<div class="card">
+        <img src="/img/woman.png" alt="Gallery image">
+        <span class="status">Available</span>
+    </div>
+</div>
+
+</body>
+</html>

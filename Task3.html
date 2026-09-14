@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+
+<style>
+
+
+    .layout{
+        display:grid;
+        grid-template-columns:1fr 3fr;
+        grid-template-rows: 80px  60px  250px 70px ;
+    gap: 10px;
+
+    }
+
+    .header {
+    grid-column: 1 / 3;
+     /* grid-column: 1 / -1; also works to task all columns برضه في الnav */
+    background-color: gold;
+    border-radius: 10px;
+}
+
+.sidebar {
+    grid-column:1 / 2;
+    grid-row: 2 / 4;
+     background-color: coral;
+    border-radius: 10px;
+
+}
+
+.nav {
+    grid-column:2 / 3;
+    grid-row:2 / 3;
+
+    background-color: deepskyblue;
+    border-radius: 10px;
+
+}
+.article {
+    grid-column:2 / 3;
+    grid-row:3 / 4;
+
+     background-color: lightsteelblue;
+    border-radius: 10px;
+}
+
+
+.footer {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+     background-color: #3d4453;
+            color: white;
+            border-radius: 10px;
+}
+    
+</style>
+
+
+
+
+<body>
+
+
+   <div class="layout">
+
+    <header class="header">
+        Header
+    </header>
+
+    <aside class="sidebar">
+        Sidebar
+    </aside>
+
+    <nav class="nav">
+        Nav
+    </nav>
+
+    <article class="article">
+        Article
+    </article>
+
+    <footer class="footer">
+        Footer
+    </footer>
+
+</div> 
+   
+</body>
+</html>
